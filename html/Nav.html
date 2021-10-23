@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Nav</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../css/LeftNav.css">
+</head>
+<body>  
+    <nav>
+        <span class="logo">
+            <i class="fab fa-wordpress"></i>
+        </span>
+        <span class="hamburger" id="hamburger">
+            <i class="fas fa-hamburger"></i>
+        </span>
+    </nav>
+
+    <div class="leftBar" id="leftBar">
+        <div class="leftLogo">
+            <i class="fab fa-wordpress"></i>
+        </div> 
+
+        <a href="Nav.html" class="active">
+            <div class="item"> 
+                <section>
+                    <span class="icon"> 
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                    <span class="tittle">
+                        Facebook
+                    </span>
+                </section>
+            </div>
+        </a>
+        
+        <a href="Nav.html">
+            <div class="item"> 
+                <section>
+                    <span class="icon"> 
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    <span class="tittle">
+                        Instagram
+                    </span>
+                </section>
+            </div>
+        </a>
+
+        <a href="Nav.html">
+            <div class="item"> 
+                <section>
+                    <span class="icon"> 
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="tittle">
+                        Twitter
+                    </span>
+                </section>
+            </div>
+        </a>
+
+        <a href="Nav.html">
+            <div class="item"> 
+                <section>
+                    <span class="icon"> 
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="tittle">
+                        Github
+                    </span>
+                </section>
+            </div>
+        </a>
+
+        <a href="Nav.html">
+            <div class="item"> 
+                <section>
+                    <span class="icon"> 
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="tittle">
+                        Home
+                    </span>
+                </section>
+            </div>
+        </a>
+
+        <section class="author">  
+                <img src="https://st.depositphotos.com/1008939/2240/i/600/depositphotos_22408839-stock-photo-serious.jpg" alt="profile" height="50px" width="50px">  
+
+                <div class="data">
+                    Rohan Gaikwad
+                    <br>
+                    <small style="opacity: 0.5;">Full stack Developer</small>
+                </div>
+        </section>
+ 
+        <div class="backArr" id="backArr">  
+                        <i class="fas fa-angle-left"></i> 
+        </div> 
+        
+    </div>
+ 
+</body>
+<script>
+    const hamBurger = document.getElementById('hamburger')
+    const backArr = document.getElementById('backArr')
+    const leftBar = document.getElementById('leftBar')
+
+    hamBurger.addEventListener('click', ()=>{
+        hamBurger.classList.toggle('hamburgerEffect')
+        leftBar.classList.toggle('animate')
+    })
+    backArr.addEventListener('click', ()=>{
+        hamBurger.classList.toggle('hamburgerEffect')
+        leftBar.classList.toggle('animate')
+    })
+</script>
+</html>
