@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
+body{ 
     color: white;
     background: black;
 }
@@ -41,7 +40,7 @@ nav{
 
 
 nav span{ 
-    font-size: 28px; 
+    font-size: 32px; 
     padding: 5px 90px; 
     cursor: pointer;
 }
@@ -72,8 +71,8 @@ nav span{
 
 .leftBar .item{
     width: 84%;  
-    margin: 9px auto; 
-    padding: 12px 15px;
+    margin: 7px auto; 
+    padding: 10px 15px;
     border-radius: 10px;
     z-index: 2;
 }  
@@ -84,7 +83,7 @@ nav span{
 
 .leftBar .item section .icon{
     font-size: 25px;
-    padding: 4px 8px; 
+    padding: 3px 8px; 
 }
 
 .leftBar .item section .tittle{ 
