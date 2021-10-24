@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/LeftNav.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/services.css">
 </head>
 <body>  
     <nav>
@@ -25,7 +26,7 @@
             <i class="fab fa-wordpress"></i>
         </div> 
 
-        <a href="Nav.html" class="active">
+        <a href="#nav"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -38,7 +39,7 @@
             </div>
         </a>
         
-        <a href="Nav.html">
+        <a href="#nav"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -51,7 +52,7 @@
             </div>
         </a>
 
-        <a href="Nav.html">
+        <a href="#nav"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -64,7 +65,7 @@
             </div>
         </a>
 
-        <a href="Nav.html">
+        <a href="#nav" onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -77,7 +78,7 @@
             </div>
         </a>
 
-        <a href="Nav.html">
+        <a href="#nav"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -135,14 +136,63 @@
 
         </div>
     </div> 
-
     
+    <div class="container services px-sm-5">
+        <h2>Our Services</h2>
+        <div class="optns">
+            
+            <div class="post"> 
+                <h4 class="text-center pt-4">  
+                    <i class="fas fa-drafting-compass logo"></i>
+                    <br>
+                   <span>Web Development</span>
+                </h4>
+                <p class="px-2 px-sm-5 pt-1 pb-3 text-center"> 
+                    <small>
+                        Lorem ipsum  nis, qui modi assumenda. Numquam, pariatur enim fugiat eligendi voluptates quod animi vero?
+                    </small>
+                </p>
+            </div>
+            <div class="post"> 
+                <h4 class="text-center pt-4">  
+                    <i class="fas fa-drafting-compass logo"></i>
+                    <br>
+                   <span>Web Development</span>
+                </h4>
+                <p class="px-5 py-3 text-center"> 
+                    <small>
+                        Lorem ipsum  nis, qui modi assumenda. Numquam, pariatur enim fugiat eligendi voluptates quod animi vero?
+                    </small>
+                </p>
+            </div>
+            <div class="post"> 
+                <h4 class="text-center pt-4">  
+                    <i class="fas fa-drafting-compass logo"></i>
+                    <br>
+                   <span>Web Development</span>
+                </h4>
+                <p class="px-5 py-3 text-center"> 
+                    <small>
+                        Lorem ipsum  nis, qui modi assumenda. Numquam, pariatur enim fugiat eligendi voluptates quod animi vero?
+                    </small>
+                </p>
+            </div>   
+        </div>
+    </div>
+
 </body>
 <script>
     const hamBurger = document.getElementById('hamburger')
     const backArr = document.getElementById('backArr')
     const leftBar = document.getElementById('leftBar')
 
+    const bgEffect = (ele)=>{
+        const rest = document.querySelectorAll('.active')
+        rest.forEach(element => {
+            element.classList.remove('active')
+        });
+        ele.classList.toggle('active')
+    }
     hamBurger.addEventListener('click', ()=>{
         hamBurger.classList.toggle('hamburgerEffect')
         leftBar.classList.toggle('animate')

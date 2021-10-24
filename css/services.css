@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.services {
+  padding: 80px 0px;
+  border-radius: 6px 8px;
+  z-index: 14;
+  background: rgba(255, 255, 255, 0.037);
+  box-shadow: 2px 2px 14px rgb(0, 0, 0);
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services .optns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin: 70px 0px 0px 0px;
+}
+
+.services .optns .post {
+  max-width: 340px;
+  border-radius: 7.5px;
+  margin: 15px 25px;
+  background: rgba(255, 255, 255, 0.041);
+}
+
+@media screen and (max-width: 600px) {
+  .services .optns .post { 
+    margin: 20px 0px; 
+  }
+}
+
+.services .optns .post p {
+  opacity: 0.5;
+}
+
+.services .optns .post .logo {
+  border: 6px solid rgb(5, 119, 150);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 20px;
+  margin-bottom: 17px;
+}

@@ -16,7 +16,7 @@ body {
 }
 
 .dummy {
-  height: 80px;
+  height: 90px;
 }
 
 .infoBox {
@@ -46,6 +46,6 @@ html *,
 html *:before,
 html *:after {
   box-sizing: border-box;
-  transition: 0.35s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
  
