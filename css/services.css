@@ -18,6 +18,19 @@
 
 .services h2 {
   text-align: center;
+  letter-spacing: 1.32px;
+  font-size: 39px;
+  font-weight: 400;
+}
+
+.services h2::after{
+  content: '';
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 2px;
+  background: rgb(6, 61, 191);
+  margin: 14px auto;
 }
 
 .services .optns {
@@ -25,11 +38,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; 
-  margin: 70px 0px 0px 0px;
+  margin: 70px 14px 0px 14px;
 }
 
 .services .optns .post {
-  max-width: 340px;
+  max-width: 360px;
   border-radius: 7.5px;
   margin: 15px 25px;
   background: rgba(255, 255, 255, 0.041);

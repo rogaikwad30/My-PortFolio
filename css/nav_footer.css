@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+nav {
+  padding: 3px 12px;
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  position: fixed;
+  background: #02053b;
+  box-shadow: 1px 1px 2px #595a5d;
+  width: 100%;
+}
+
+.leftBar {
+  max-width: 260px;
+  height: 98vh;
+  background: #000517;
+  border-radius: 16px;
+  z-index: 2;
+  padding-top: 5px;
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  margin-top: 5px;
+  box-shadow: 1px 1px 2px #595a5d;
+}
+
+.animate {
+  left: 0%;
+}
+
+nav span {
+  font-size: 32px;
+  padding: 5px 90px;
+  cursor: pointer;
+}
+
+.hamburgerEffect {
+  color: aqua;
+  transition: all linear 0.3s;
+}
+
+@media only screen and (max-width: 825px) {
+  nav span {
+    padding: 6px 12px;
+  }
+}
+
+.leftBar .leftLogo {
+  text-align: center;
+  font-size: 38px;
+  padding: 8px 0px;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.leftBar a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.leftBar .item {
+  width: 84%;
+  margin: 7px auto;
+  padding: 10px 15px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.leftBar .item section {
+  position: relative;
+}
+
+.leftBar .item section .icon {
+  font-size: 25px;
+  padding: 3px 8px;
+}
+
+.leftBar .item section .tittle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 4px 8px;
+}
+
+.leftBar .backArr {
+  position: absolute;
+  bottom: 95px;
+  left: 15px;
+  opacity: 0.5;
+  padding: 4px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.leftBar .active .item {
+  border: none;
+  background: rgba(255, 255, 255, 0.081);
+}
+
+.leftBar .active .item section {
+  color: rgb(106, 102, 218);
+}
+
+.leftBar .author {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+  background: rgba(106, 102, 218, 0.13);
+}
+
+.leftBar .author img {
+  border-radius: 50%;
+}
+
+.leftBar .author .data {
+  margin-left: 10px;
+  padding-left: 6px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+  
+footer .box{  
+    padding: 18px 13px;
+    margin: 6px 0px;
+}
+
+
+
+footer .r{   
+  text-align: right; 
+}
+ 
+footer .icons .social-icon{
+    border: 1px solid rgb(126, 126, 126); 
+    color:   rgb(126, 126, 126); 
+    display: inline-flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    height: 50px;
+    width: 50px; 
+}
+ 
+
+footer .box .r h3{   
+  margin-right: 10px;
+  margin-bottom: 16px;
+}
+
+footer .box .r a {
+   border-radius: 10px;
+   text-decoration: none;
+   margin: 4px;
+   transition: all ease-in-out 0.3s;
+}
+
+footer .box .r a:hover{ 
+  background: white;
+  cursor: pointer;
+  color: black;
+  border-radius: 50%;
+  border: aliceblue 1px solid;
+}
+
+footer{ 
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.037);
+  box-shadow: 2px 2px 14px rgb(0, 0, 0);
+  padding: 15px 0px; 
+}
+
+@media screen and (max-width:991px){
+   .box , footer .r{
+     text-align: center;
+   }
+
+}
