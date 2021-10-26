@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>  
     <nav>
@@ -27,66 +28,66 @@
             <i class="fab fa-wordpress"></i>
         </div> 
 
-        <a href="#nav"  onclick="bgEffect(this)">
+        <a href="#home"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
                         <i class="fab fa-facebook"></i>
                     </span>
                     <span class="tittle">
-                        Facebook
+                        Home
                     </span>
                 </section>
             </div>
         </a>
         
-        <a href="#nav"  onclick="bgEffect(this)">
+        <a href="#services"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
                         <i class="fab fa-instagram"></i>
                     </span>
                     <span class="tittle">
-                        Instagram
+                        Services
                     </span>
                 </section>
             </div>
         </a>
 
-        <a href="#nav"  onclick="bgEffect(this)">
+        <a href="#works"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
                         <i class="fab fa-twitter"></i>
                     </span>
                     <span class="tittle">
-                        Twitter
+                        Recent Works
                     </span>
                 </section>
             </div>
         </a>
 
-        <a href="#nav" onclick="bgEffect(this)">
+        <a href="./about.html" onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
                         <i class="fab fa-github"></i>
                     </span>
                     <span class="tittle">
-                        Github
+                        About Me
                     </span>
                 </section>
             </div>
         </a>
 
-        <a href="#nav"  onclick="bgEffect(this)">
+        <a href="#contact"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
                         <i class="fas fa-home"></i>
                     </span>
                     <span class="tittle">
-                        Home
+                        Contact
                     </span>
                 </section>
             </div>
@@ -95,7 +96,7 @@
         <section class="author">  
                 <img src="https://st.depositphotos.com/1008939/2240/i/600/depositphotos_22408839-stock-photo-serious.jpg" alt="profile" height="50px" width="50px">  
 
-                <div class="data">
+                <div class="data" style="font-size: small;">
                     Rohan Gaikwad
                     <br>
                     <small style="opacity: 0.5;">Full stack Developer</small>
@@ -108,10 +109,10 @@
         
     </div> 
     
-    <div class="dummy"> 
+    <div class="dummy" id="home"> 
     </div>
 
-     <div class="container">
+    <div class="container" >
         <div class="row">
             
             <div class="col-lg-6 infoBox mt-5 mt-lg-0 px-3 px-md-5">
@@ -119,14 +120,14 @@
                     <h1>
                         <p>Hello I'm</p> <span> Rohan D. Gaikwad</span>
                     </h1>
-                    <h6 class="mt-4">Third year B.Tech graduate uprgrading towards <span>FULL STACK FREELANCER .</span>
+                    <h6 class="mt-4">Third year B.Tech graduate uprgrading towards FULL STACK FREELANCER 
                     <br>
                     A masterful team that executes engagement with accuracy, proficiency, and innovation.
                     </h6>
 
-                    <section class="buttons mt-4 py-2 mb-3">
-                        <button class="btn btn-primary px-3 px-sm-5">See Works</button>
-                        <button class="btn btn-secondary mx-4  px-3 px-sm-5">Contact</button>
+                    <section class="buttons mt-4 py-2 mb-3" >
+                        <a style="font-size: larger;" href="#works" class="btn btn-primary px-3 px-sm-5">See Works</a>
+                        <a style="font-size: larger;" href="./dashboard.html" class="btn btn-secondary mx-4  px-3 px-sm-5">Contact</a>
                     </section>
 
                 </section>
@@ -138,8 +139,10 @@
         </div>
     </div> 
     
-    <div class="container services px-sm-5">
-        <h2>Our Services</h2>
+    <div class="dummy" id="services"> 
+    </div>
+    <div class="container services px-sm-5" >
+        <h1>Our Services</h1>
         <div class="optns">
             
             <div class="post"> 
@@ -181,7 +184,7 @@
         </div>
     </div>
  
-    <div class="container my-5 works">
+    <div class="container my-5 works" id="works">
         <h1>Recent Works</h1>
         <div class="projects">
             <div class="proj p-3 ">
@@ -274,38 +277,46 @@
             </div>
         </div>
     </div>
-
+    
+    <div  id="contact" class="py-5"></div>
+    <div class="container text-center contact">
+        <section>
+            <h1 class="display-5">Have something in Mind ?</h1>
+            <p class="lead py-2" style="opacity: 0.66;">Let me help you do it .....!</p>
+            <a href="./about.html" class="btn btn-primary mt-2 px-5 py-3" style="font-size: larger;">Conatct Me</a>
+        </section>
+    </div>
 
     <footer class="container-fluid">
         <div class="row  my-5 mx-1 mx-lg-5">
-            <div class="col-lg-4 pb-lg-5 text-right box">
+            <div class="col-lg-4 pb-lg-4 text-right box">
                 <div class="info mb-3 mt-1">
                     <span class="py-4 px-2">
                         <i class="fas fa-map-marker-alt"></i>
                     </span>
-                    <span class="p-1">VIT Pune 431001</span>
+                    <span class="p-1 txt" >VIT Pune 431001</span>
                 </div>
                 <div class="info  mb-3 mt-1">
                     <span class="py-4 px-2"><i class="fas fa-phone-alt"></i></span>
-                    <span class="p-1">97358266486</span>
+                    <span class="p-1 txt">97358266486</span>
                 </div>
                 <div class="info  mb-3 mt-1">
                     <span class="py-4 px-2"><i class="fas fa-paper-plane"></i></span>
-                    <span class="p-1"><a href="./dashboard.html" style="text-decoration: none; color: white;">rohan.gaikwad19@vit.edu</a></span>
+                    <span class="p-1 txt" ><a  href="./dashboard.html" style="text-decoration: none; color: white;">rohan.gaikwad19@vit.edu</a></span>
                 </div>
             </div>
     
-            <div class="col-lg-4 pb-lg-5  text-center box">
-                <h1>
+            <div class="col-lg-4 pb-lg-4  text-center box">
+                <h2>
                     <i class="fas fa-prescription mx-2"></i>
-                    <span>Optimistic Nerd</span>
-                </h1>
+                    <span>Optimistic Nerds</span>
+                </h2>
                 <p class="d-block mt-3">
                     <small style="opacity: 0.75;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde nobis maxime esse quos.</small>
                 </p>
             </div>
  
-            <div class="col-lg-4 pb-5  box"> 
+            <div class="col-lg-4 pb-4  box"> 
                <section class="r">
                 <h3>Let's Connect</h3>
                
@@ -350,15 +361,16 @@
             element.classList.remove('active')
         });
         ele.classList.toggle('active')
+        controlNav();
     }
-    hamBurger.addEventListener('click', ()=>{
+
+    const controlNav =  ()=>{
         hamBurger.classList.toggle('hamburgerEffect')
         leftBar.classList.toggle('animate')
-    })
-    backArr.addEventListener('click', ()=>{
-        hamBurger.classList.toggle('hamburgerEffect')
-        leftBar.classList.toggle('animate')
-    })
+    }
+
+    hamBurger.addEventListener('click', controlNav)
+    backArr.addEventListener('click', controlNav)
 </script>
 <script src="../threeJs/three.min.js"></script>
 <script src="../threeJs/OrbitControls.js"></script>

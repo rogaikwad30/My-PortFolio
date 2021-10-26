@@ -49,3 +49,19 @@ html *:after {
   transition: 0.1s ease-in-out;
 }
  
+
+.contact section{ 
+  border-radius: 18px;
+  max-width: 800px;   
+  margin: 45px 11px 170px 11px;
+  padding: 70px 0px;
+  background: rgba(211, 202, 221, 0.072);
+  box-shadow: 2px 2px 14px rgb(0, 0, 0);
+}
+
+@media screen and (min-width:801px){
+  .contact section{
+    margin: 25px auto;
+    margin-bottom: 150px;
+  }
+}

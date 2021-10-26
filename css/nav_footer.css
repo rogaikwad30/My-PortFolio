@@ -139,7 +139,19 @@ footer .box{
     margin: 6px 0px;
 }
 
+footer .box .txt{
+  opacity: 0.67;
+  transition: all linear ease-in-out 0.2s;
+}
 
+footer .box .txt:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer .box span i{
+  font-size: 26px;
+}
 
 footer .r{   
   text-align: right; 
@@ -170,11 +182,9 @@ footer .box .r a {
 }
 
 footer .box .r a:hover{ 
-  background: white;
   cursor: pointer;
-  color: black;
-  border-radius: 50%;
-  border: aliceblue 1px solid;
+  color: rgb(10, 121, 255);
+  border: rgb(24, 131, 224) 1px solid;
 }
 
 footer{ 
