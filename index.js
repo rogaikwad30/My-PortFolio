@@ -1,8 +1,11 @@
 const express = require("express")
 const app = express()
+const mongodb = require('./services/mongodb')
+const handlers = require('./controllers/handlers')
 const bodyParser = require('body-parser')
+
 app.set('view engine', 'html')
-app.set('views',"html")
+app.set('views',"views")
 app.use(express.static("public")) 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -39,14 +42,10 @@ app.get("/about" , (req,res)=>{
     console.log(log)
 })
 
-app.post("/contact", (req,res)=>{
-    let log = new Log();
-    log.url = req.url;
-    log.response = res.statusCode;
-    log.data = req.body;
-    console.log(log)
-    res.send(req.body)
-})
+app.post("/add-comment", handlers.addComment)
+app.post("/add-admin", handlers.addAdmin)
+app.post("/add-comment", handlers.addComment)
+app.post("/comments", handlers.getComments)
 
 const port = 3000;
 app.listen(port,()=>{
