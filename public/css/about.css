@@ -105,10 +105,7 @@
     }
     .about .info h6{ 
         padding-top: 2px;
-    } 
-    .about .info p{
-        font-size: smaller;
-    }
+    }  
 }
  
 @media screen and (max-width:991px){
