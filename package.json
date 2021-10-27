@@ -4,7 +4,8 @@
   "description": "This is my portfolio made using html , css , three.js and bootstrap with Nodejs for integration and minor features.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

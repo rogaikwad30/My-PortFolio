@@ -47,7 +47,7 @@ app.post("/add-admin", handlers.addAdmin)
 app.post("/add-comment", handlers.addComment)
 app.post("/comments", handlers.getComments)
 
-const port = 3000;
-app.listen(port,()=>{
+const port = process.env.PORT || 3000;
+app.listen(port  ,()=>{
     console.log(`server running at port : ${port}`);
 })
