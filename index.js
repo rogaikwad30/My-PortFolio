@@ -23,11 +23,11 @@ app.get("/", (req,res)=>{
     log.url = req.url;
     log.response = res.statusCode;
     console.log(log)
-    res.sendFile( __dirname + "/html/dashboard.html")
+    res.sendFile( __dirname + "/views/dashboard.html")
 })
 
 app.get("/home", (req,res)=>{
-    res.sendFile( __dirname + "/html/dashboard.html")
+    res.sendFile( __dirname + "/views/dashboard.html")
     let log = new Log();
     log.url = req.url;
     log.response = res.statusCode;
@@ -35,7 +35,7 @@ app.get("/home", (req,res)=>{
 })
 
 app.get("/about" , (req,res)=>{
-    res.sendFile( __dirname + "/html/about.html")
+    res.sendFile( __dirname + "/views/about.html")
     let log = new Log();
     log.url = req.url;
     log.response = res.statusCode;
