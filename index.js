@@ -5,7 +5,7 @@ const handlers = require('./controllers/handlers')
 const bodyParser = require('body-parser')
 const  loginMiddleware = require('./services/jwt').verifyToken
 
-
+app.use(express.static('public'))
 app.set('view engine', 'html')
 app.set('views',"views")
 app.use(express.static("public")) 
