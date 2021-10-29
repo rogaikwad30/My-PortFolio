@@ -113,3 +113,134 @@
         padding-bottom: 25%;
     }
 }
+ 
+.contact label,
+.contact  input,
+.contact  textarea {
+    display: block;
+    width: 100%;
+}
+.contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact li {
+    padding: 0.3em;
+}
+.contact span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.contact .submit {
+    background: #fc4366;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em;
+}
+ 
+.contact  form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.contact .required-star {
+    color: #fc4366;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+}
+.contact {
+    max-width: 460px; 
+    margin: 5em auto;
+    background: #000517;
+}
+
+
+
+.balls{
+    margin: 10px;
+    
+}
+#ball{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+    
+}
+#ball1{
+    width:50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: ball1 1.7s infinite ease ;
+    
+}
+#ball2{
+    width:50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: ball1 1.7s infinite ease .1s;
+}
+#ball3{
+    width:50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: ball1 1.7s infinite ease .2s;
+}
+@keyframes ball1{
+    0%{
+        margin-top: 0px;
+    }
+    10%{
+        margin-top: -50px;
+    }
+    20%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+@keyframes ball2{
+    
+}
+@keyframes ball3{
+    
+}

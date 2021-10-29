@@ -25,7 +25,7 @@
             <i class="fab fa-wordpress"></i>
         </div> 
 
-        <a href="#home"  onclick="bgEffect(this)">
+        <a href="/home#home"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -38,7 +38,7 @@
             </div>
         </a>
         
-        <a href="#services"  onclick="bgEffect(this)">
+        <a href="/home#services"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -51,7 +51,7 @@
             </div>
         </a>
 
-        <a href="#works"  onclick="bgEffect(this)">
+        <a href="/home#works"  onclick="bgEffect(this)">
             <div class="item"> 
                 <section>
                     <span class="icon"> 
@@ -159,6 +159,44 @@
         <div class="contact">
             
         </div>
+    </div> 
+
+
+    <div class="container  " id="contact">
+        <h1 class="text-center">Contact Me</h1>
+        <div class="contact">
+            <form>
+                <ul>
+                    <li>
+                        <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                        <input type="email" id="email" name="email">
+                    </li>
+                    <li>
+                        <label for="msg"><span>Message</span></label>
+                        <textarea id="comment"  name="comment" rows="4" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <div class="btn btn-success submit " id="submitbtn">Send</div>
+                    </li>
+
+                    <div id="ball" style="display: none;" style="height: 180px; width: 180px;">
+                        <div id="ball1" class="balls"></div>
+                        <div id="ball2" class="balls"></div>
+                        <div id="ball3" class="balls"></div>
+                    </div>
+                    <span style="display: none;" id="response" class="response   bg-light p-3 mt-3">
+                        <i>Response code : </i> <i id="status"></i>
+                        <p>Response :
+                            <span id="actual"></span>
+                        </p>
+                    </span>
+                </ul>
+            </form>
+        </div>
     </div>
 
     <footer class="container-fluid">
@@ -245,5 +283,44 @@
 
     hamBurger.addEventListener('click', controlNav)
     backArr.addEventListener('click', controlNav)
+
+    const formSubmit = () => {
+        let s = 0;
+            const data = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                comment: document.getElementById("comment").value
+            }
+            
+            document.getElementById("response").style.display = "none"
+            document.getElementById("ball").style.display = ""
+            fetch("/add-comment", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then((res) => {
+                res.json()
+                s = res.status
+            })
+                .then((data) => {
+                    document.getElementById("ball").style.display = "none"  
+                    document.getElementById("response").style.display = "inline-block"
+                    document.getElementById("status").innerHTML = s;
+                    if(s==200){
+                        document.getElementById("actual").innerHTML = "<b>Your message has been passed on . Rohan will contact you soon.</b>";
+                    }
+                    else{
+                        document.getElementById("actual").innerHTML = "<b>Invalid Data . <br/> Message can't send .</b>";
+                    }
+                })
+                .catch((err) => console.log(err))
+        }
+
+    const submitButton = document.getElementById("submitbtn")
+    submitButton.addEventListener("click", formSubmit)
+
+   
 </script> 
 </html>

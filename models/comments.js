@@ -13,12 +13,12 @@ let commentsSchema = new mongoose.Schema({
         required: [true, "can't be blank"], 
         match: [/\S+@\S+\.\S+/, 'is invalid']
     },
-    mobile : {
-        type: String, 
-        required: [true, "can't be blank"],
-        minLength : [10 , "Mobile no must be 10 digit exact"],
-        maxlength: [10 , "Mobile no must be 10 digit exact"] 
-    },
+    // mobile : {
+    //     type: String, 
+    //     required: [true, "can't be blank"],
+    //     minLength : [10 , "Mobile no must be 10 digit exact"],
+    //     maxlength: [10 , "Mobile no must be 10 digit exact"] 
+    // },
     comment:{
         type: String,
         required: [true, "can't be blank"]
