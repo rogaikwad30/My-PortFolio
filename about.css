@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.about{
+    /* border: 1px solid rgb(246, 245, 245); */
+    color: #8892b0;
+    background: #0a192f; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about button{ 
+    outline: none;
+    background: transparent;
+    color: aquamarine;
+    border: 1px solid aquamarine;
+    padding: 12px 36px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+.about .name {
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.about .hi-line{
+    color: aquamarine;
+    font-size: larger;
+}
+
+.about .sub-name{
+    font-weight: 400;
+}
+
+.about .desc{
+    padding-top: 27px;
+    padding-bottom: 27px ;
+}
+
+.about .desc span{
+    color: aquamarine;
+}
+
+.intro{
+    color:#8892b0;
+    background: #0a192f; 
+    min-height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro small{
+    text-align: justify;
+}
+
+.introContainer .right img{
+    border-radius: 10px;
+    max-height: 275px; 
+}
+
+.introContainer .left .headline{
+    font-weight: 700;
+}
+
+.introContainer .left ul{
+    list-style: none;
+    /* border: 1px solid white; */
+    padding: 0px;
+    width: 80%;
+}
+
+.introContainer .left ul li{ 
+    padding: 3px auto;
+    border-radius: 4px;
+    margin: 3px auto; 
+    width: 120px;
+    margin-right: 20px;
+    /* border: 1px solid red; */
+    display: inline-block; 
+    font-size:  medium; 
+}
+
+.introContainer .left ul li::before{ 
+    content: "\00BB";
+    padding-right: 10px;
+    font-weight: bold;
+    color: aquamarine;
+    font-size: large;
+}
+
+ 

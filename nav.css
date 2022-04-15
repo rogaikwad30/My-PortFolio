@@ -1,0 +1,91 @@
+header{
+    /* border: 1px solid white; */
+    color:#8892b0;
+    background: #0a192f;  
+    position: fixed;
+    width: 100%;
+} 
+
+header nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}  
+
+header nav .hamburger{
+    display: none;
+    /* border: 1px solid white; */
+}
+
+ 
+header nav .logo, header nav .links{
+    /* border: 1px solid rgb(253, 253, 253); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .links .linkBox{
+    /* border: 1px solid green; */
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header nav .links .linkBox .link{
+    text-decoration: none;
+    color: #8892b0;
+}
+
+header nav .links .linkBox .link b{
+    color: #64ffda;
+    padding-right: 3px;
+}
+
+header nav .links  .Resume {
+    border: 1px solid #64ffda;
+    padding-top:8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+}
+
+header nav .links  .Resume a{
+    color: #64ffda;  
+}
+
+@media screen and (max-width: 880px){
+    header nav .logo{
+        display: block;
+    }
+    header nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header nav .links {
+        /* border: 1px dashed white; */
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        width: 100%; 
+        display: none;
+    }
+    header nav .links { 
+        background: rgba(33, 48, 70, 0.3);
+    }
+    header nav .links .linkBox{
+        display: block;
+        width: 100%;
+        margin: 20px auto; 
+    }
+    header nav .hamburger{
+        display: block;
+    }
+    header nav .links  .Resume{ 
+        max-width: 200px;
+    }
+    header nav .links .linkBox .link b{
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+}
